@@ -10,7 +10,21 @@
   <h1>Tetris</h1>
   <div class="tetris-container">
     <div class="grid"></div>
-    <div class="score">Score: <span id="score">0</span></div>
+    <div class="score">Score: <span id="score">0</span> | Lines: <span id="lines">0</span> | Level: <span id="level">1</span></div>
+  </div>
+  <button id="themeToggleBtn">Toggle Theme</button>
+  <div id="tutorialModal" class="modal">
+    <div class="modal-content">
+      <h2>How to Play</h2>
+      <p>Move the Tetriminos using arrow keys. Rotate them using the up arrow key.</p>
+      <button id="closeTutorial">Close</button>
+    </div>
+  </div>
+  <div class="mobile-controls">
+    <button id="moveLeftBtn">Left</button>
+    <button id="moveRightBtn">Right</button>
+    <button id="rotateBtn">Rotate</button>
+    <button id="moveDownBtn">Down</button>
   </div>
   <script src="script.js"></script>
 </body>
